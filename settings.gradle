@@ -1,7 +1,14 @@
 pluginManagement {
+    plugins {
+        id("org.jetbrains.dokka") version ("1.4.0")
+    }
     repositories {
         gradlePluginPortal()
         jcenter()
+        mavenCentral()
+        maven{
+            url"https://maven.pkg.jetbrains.space/kotlin/p/dokka/dev"
+        }
     }
 }
 include ':mylibrary2'
